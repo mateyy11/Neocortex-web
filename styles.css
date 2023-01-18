@@ -1,0 +1,936 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  backdrop-filter: saturate(180%) blur(20px);
+  /* background: linear-gradient(
+    90deg,
+    rgba(4, 10, 20, 0.9) 0%,
+    rgba(8, 20, 39, 0.9) 40%,
+    rgba(4, 10, 19, 0.9) 100%
+  ); */
+  background-color: #090d16;
+  border-bottom: 1px solid #223550;
+  z-index: 100;
+}
+
+.burger {
+  max-height: 40px;
+  width: auto;
+  display: none;
+  cursor: pointer;
+}
+
+.navy {
+  width: fit-content;
+}
+
+.nav_res {
+  visibility: collapse;
+  width: 280px;
+  height: 100%;
+  background-color: rgba(5, 11, 20, 0.9);
+  position: fixed;
+  top: 70px;
+  right: 0;
+  z-index: 50;
+  border-left: 1px solid #2d4364;
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform: translateX(300px);
+}
+.nav_res.active {
+  visibility: visible;
+  display: block;
+  transform: translateX(0px);
+  box-shadow: -8px 0px 26px 1px rgba(0, 0, 0, 0.3);
+}
+
+.burger_rec {
+  width: 46px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.burger_rec:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 14px;
+  height: fit-content;
+}
+
+.header_spacing {
+  max-width: 87.5%;
+  margin: auto;
+}
+
+.logo {
+  font-family: "PP Neue Machina Bold";
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.logo:hover {
+  text-shadow: 0px 0px 16px #aaaaaa;
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 22px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.res_nav_links {
+  list-style: none;
+}
+
+.res_nav_links li {
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 12px;
+  border-bottom: 1px solid #2d4364;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.res_nav_links li:hover {
+  background-color: #121d2e;
+}
+
+li > a,
+header > a:not(.logo) {
+  font-size: 16px;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-family: "PP Neue Machina Regular";
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+li a:hover {
+  color: #ffffff;
+}
+
+.btn-nav {
+  width: 138px;
+  height: 42px;
+  background: linear-gradient(94.99deg, #37a3f6 0, #582bd9 100%);
+  border-radius: 8px;
+  color: white;
+  font-family: "PP Neue Machina Regular";
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.vid {
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.hero_text_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: 73vw;
+  padding-top: 200px;
+  margin-left: 13.6458%;
+}
+
+h1 {
+  font-family: "PP Neue Machina Bold";
+  font-size: 164px;
+  line-height: 100%;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hero_text_container p {
+  margin-top: 18px;
+  width: 54vw;
+  font-family: "PP Neue Machina Light";
+  font-size: 21px;
+  line-height: 180%;
+  color: #e7ebf0;
+}
+
+.hero_span {
+  font-family: "PP Neue Machina Bold";
+  background: linear-gradient(94.99deg, #37a3f6 19.91%, #582bd9 250%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn_hero_ow {
+  color: white;
+  width: 172px;
+  height: 50px;
+  background: linear-gradient(94.99deg, #37a3f6 19.91%, #582bd9 101.27%);
+  border-radius: 8px;
+  margin-top: 0px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn_hero_cu {
+  color: white;
+  width: 172px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #5562db;
+  background: none;
+  margin-top: 30px;
+  margin-left: 1.5vw;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn_hero_ow:hover,
+.btn_hero_cu:hover,
+.btn-nav:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 1px 20px 6px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.white_long {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 220px;
+  background: #ffffff;
+  /* border-radius: 40px; */
+  margin-top: -5vh;
+}
+
+.anime_scroll {
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 900ms;
+}
+.anime {
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 900ms;
+}
+
+.anime_scroll.show {
+  filter: blur(0px);
+  transform: translateY(0);
+  opacity: 1;
+}
+.anime.show {
+  filter: blur(0px);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.take_the_world_container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 240px;
+  max-width: 1114px;
+  height: fit-content;
+}
+
+.take_the_world_container img {
+  display: inline-block;
+  width: 22vw;
+}
+
+.block_first {
+  display: inline-block;
+  min-width: fit-content;
+}
+
+.p_small {
+  font-family: "PP Neue Machina Bold";
+  font-size: 16px;
+  line-height: 99.2%;
+  color: var(--small-p-color);
+}
+
+h2 {
+  font-family: "PP Neue Machina Bold";
+  font-size: 64px;
+  line-height: 100%;
+  color: var(--main-h-color);
+  margin-top: 16px;
+}
+
+.lil_p {
+  font-size: 16px;
+  line-height: 171%;
+  color: var(--lil-p-color);
+  margin-top: 10px;
+}
+
+.little_p {
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--lil-p-color);
+  margin-top: 20px;
+}
+
+.lil_p_add {
+  font-size: 20px;
+  line-height: 171%;
+  color: var(--main-h-color);
+  margin-top: 10px;
+}
+
+.we_work_with_container {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 140px;
+  max-width: 1114px;
+}
+
+.slider {
+  height: fit-content;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.slider::before {
+  background: linear-gradient(
+    to right,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 40%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 40%;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+
+.slide_track {
+  display: flex;
+  overflow: hidden;
+  height: 180px;
+}
+
+.slide_track_2 {
+  display: flex;
+  margin-left: -50px;
+  overflow: hidden;
+  height: 235px;
+}
+.rectangle {
+  background: transparent;
+  border: 1px var(--main-h-color) solid;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  max-height: 10em;
+  max-width: 10em;
+  min-height: 10em;
+  min-width: 10em;
+  margin-right: 20px;
+}
+
+.img_box {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.not_just_another_container {
+  margin: auto;
+  margin-top: 120px;
+  max-width: 1114px;
+  width: fit-content;
+}
+
+.not_just_ADDITIVE {
+  margin: auto;
+  margin-top: 40px;
+  max-width: 700px;
+  display: none;
+}
+
+.cont_cool {
+  gap: 80px;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 46px;
+  height: fit-content;
+}
+
+.cont_cool_2 {
+  gap: 80px;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 46px;
+  height: 600px;
+}
+
+.cont_flexbox {
+  max-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vw;
+}
+
+.cont_flexbox_scroll {
+  width: fit-content;
+  display: flex;
+  gap: 78px;
+}
+
+.cont_in {
+  width: 414px;
+  height: 610px;
+  border: 2px solid var(--main-h-color);
+  border-bottom: 4px solid black;
+  box-shadow: 15px 40px 35px rgba(0, 0, 0, 0.01),
+    10px 25px 10px rgba(0, 0, 0, 0.03), 2px 10px 12px rgba(0, 0, 0, 0.04),
+    2px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.cont_in:nth-child(2) {
+  transition-delay: 100ms;
+}
+.cont_in:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.temp:nth-child(4) {
+  transition-delay: 200ms;
+}
+
+.stg:nth-child(2) {
+  margin-top: -20px;
+}
+
+.cont_in_small {
+  width: 414px;
+  height: 500px;
+  border: 2px solid var(--main-h-color);
+  border-bottom: 4px solid black;
+  box-shadow: 15px 40px 35px rgba(0, 0, 0, 0.01),
+    10px 25px 10px rgba(0, 0, 0, 0.03), 2px 10px 12px rgba(0, 0, 0, 0.04),
+    2px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cont_in_small:nth-child(2) {
+  transition-delay: 100ms;
+}
+.cont_in_small:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.cont_contents {
+  height: fit-content;
+  width: 336px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+h3 {
+  font-family: "PP Neue Machina Bold";
+  font-size: 24px;
+  color: var(--main-h-color);
+  margin-top: 24px;
+  width: fit-content;
+}
+
+.mid_p {
+  font-family: "PP Neue Machina Light";
+  font-size: 14px;
+  line-height: 170%;
+  color: var(--lil-p-color);
+  margin-top: 14px;
+}
+
+.svg_continer {
+  height: 284px;
+}
+
+.svg_1st {
+  margin: auto;
+  padding-left: 16px;
+}
+.svg_2nd {
+  margin: auto;
+  padding-left: 2px;
+  margin-bottom: 20px;
+}
+.svg_3rd {
+  margin: auto;
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+
+.cont_big_text_container {
+  margin-top: 144px;
+}
+.big_text_margin {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+h4 {
+  font-size: 200px;
+  font-family: "PP Neue Machina Bold";
+  display: inline-block;
+  margin-top: -28px;
+  color: var(--main-h-color);
+  line-height: 100%;
+}
+.h4_spec {
+  color: var(--small-p-color);
+  text-align: right;
+}
+.h4_2 {
+  width: fit-content;
+  height: fit-content;
+  margin-top: -74px;
+  line-height: 90%;
+}
+
+.rectangle_spec {
+  width: 17vw;
+  height: 2vw;
+  background-color: var(--main-h-color);
+  margin-top: 2.5vw;
+  float: right;
+}
+.prvni {
+  height: fit-content;
+}
+.druhy {
+  float: right;
+  height: fit-content;
+}
+
+.divider {
+  height: 24px;
+}
+
+.section_img_short {
+  height: 55em;
+  width: 100%;
+  background: url(images/Rectangle\ 11.png);
+  background-size: contain;
+  background-size: 100% 52em;
+  padding-bottom: 400px;
+  z-index: 0;
+}
+
+.together_container {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding-top: 176px;
+}
+
+.white_long_2 {
+  margin-top: -80px;
+  height: 1764px;
+  width: 100%;
+  background-color: white;
+  /* border-radius: 40px; */
+}
+
+.lil_blue_rec {
+  width: 49px;
+  height: 8px;
+  background: #3970c2;
+  margin-bottom: 20px;
+}
+
+h6 {
+  font-family: "PP Neue Machina Bold";
+  font-size: 116px;
+  line-height: 99.2%;
+  color: white;
+}
+
+.stronger_span {
+  font-family: "PP Neue Machina Bold";
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.table_like {
+  display: inline-block;
+  width: 537px;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.table_like_P1 {
+  font-size: 20px;
+  line-height: 171%;
+  color: var(--table-like-p-color);
+}
+
+.table_like_P2 {
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--table-like-p-color);
+  margin-top: 26px;
+}
+
+.news_image_cont {
+  width: 336px;
+  height: 186px;
+  overflow: hidden;
+  border-radius: 11px;
+}
+
+.news_image_cont img {
+  width: 350px;
+  height: auto;
+}
+
+.a_cent {
+  margin: auto;
+  margin-top: 42px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.show_more_a {
+  text-align: center;
+  font-family: "PP Neue Machina Bold";
+  background: linear-gradient(94.99deg, #37a3f6 19.91%, #582bd9 250%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.above_footer {
+  margin: auto;
+  margin-top: auto;
+  margin-top: -140px;
+  max-width: 73vw;
+  height: 193px;
+  background: linear-gradient(274deg, #37a3f6 23.04%, #582bd9 101.24%);
+  border-radius: 22px;
+}
+
+.btns_center {
+  width: fit-content;
+}
+
+.btns_center input {
+  cursor: pointer;
+}
+
+.btn_footer_cu {
+  width: 152px;
+  height: 44px;
+  background: #132239;
+  border-radius: 8px;
+  color: white;
+  margin-top: 24px;
+}
+.btn_footer_re {
+  width: 152px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 1vw;
+  margin-top: auto;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+}
+
+.flex_container {
+  margin: auto;
+  padding-top: 48px;
+  max-width: 65vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_container {
+  margin: auto;
+  max-width: 73vw;
+  height: fit-content;
+}
+
+.header7 {
+  font-family: "PP Neue Machina Bold";
+  font-size: 36px;
+  color: white;
+}
+
+footer {
+  margin-top: 80px;
+  width: 100%;
+}
+.links_footer {
+  margin-top: 28px;
+
+  width: fit-content;
+  height: fit-content;
+}
+
+.footer_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.additional_footer {
+  width: 100%;
+  height: 60px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(116, 116, 116, 0.8);
+}
+
+.additional_footer_container {
+  max-width: 73vw;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.a_additional_footer {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.gapped a {
+  margin-left: 40px;
+  color: #f0f0f0;
+}
+
+.gapped a:hover {
+  text-decoration: underline solid;
+}
+
+.h_footer {
+  font-family: "PP Neue Machina Light";
+  font-size: 14px;
+  letter-spacing: 0.36em;
+  color: #f0f0f0;
+}
+
+.a_footer_container {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.a_footer_container a {
+  font-size: 11px;
+  color: #b1b1b1;
+}
+
+.a_footer_container a:hover {
+  text-decoration: underline solid;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navy,
+  .btn-nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .nav_res.active {
+    visibility: collapse;
+  }
+}
+
+@media only screen and (max-width: 1610px) {
+  h1 {
+    font-size: 130px;
+  }
+  h4 {
+    font-size: 130px;
+  }
+  .hero_text_container p {
+    font-size: 14px;
+  }
+  .cont_big_text_container img {
+    display: none;
+  }
+  .cont_cool {
+    display: none;
+  }
+  .cont_cool_2 {
+    display: none;
+  }
+  .not_just_ADDITIVE {
+    display: block;
+  }
+  .rectangle_spec {
+    margin-top: 1vw;
+    width: 14vw;
+    height: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  h1 {
+    font-size: 10vw;
+    line-height: 140%;
+  }
+  h4 {
+    font-size: 14vw;
+  }
+  .rectangle_spec {
+    margin-top: 3.5vw;
+    width: 14vw;
+    height: 2vw;
+  }
+  .take_the_world_container img {
+    display: none;
+  }
+  .lets_open_container img {
+    display: none;
+  }
+  .header7 {
+    display: none;
+  }
+  .btns_center {
+    margin: auto;
+  }
+  .above_footer {
+    max-width: 1000px;
+  }
+  .gapped {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .btn_hero_cu {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+  .btn_hero_ow {
+    margin-top: 26px;
+  }
+  .rectangle_spec {
+    margin-top: 2.5vw;
+    width: 14vw;
+    height: 2vw;
+  }
+  .btn_footer_re {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  .additional_footer p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .take_the_world_container,
+  .hero_text_container,
+  .we_work_with_container,
+  .not_just_another_container,
+  .not_just_ADDITIVE,
+  .above_footer {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+  .big_text_margin {
+    margin: auto;
+  }
+  #h2_1,
+  #h2_2,
+  #h2_3,
+  #h2_4,
+  #h2_5 {
+    font-size: 8vw;
+  }
+  .lil_p {
+    font-size: 3vw;
+  }
+  .lil_p_add {
+    font-size: 5vw;
+    margin-bottom: -10px;
+  }
+  .little_p {
+    font-size: 2.5vw;
+  }
+  .we_work_with_container {
+    padding-top: 70px;
+  }
+  .not_just_another_container {
+    margin-top: 40px;
+  }
+  .rectangle {
+    max-height: 8em;
+    max-width: 8em;
+    min-height: 8em;
+    min-width: 8em;
+    margin-right: 20px;
+  }
+  .slide_track {
+    height: 140px;
+  }
+  .slide_track_2 {
+    height: 160px;
+  }
+  .take_the_world_container {
+    padding-top: 100px;
+  }
+}

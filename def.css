@@ -1,0 +1,99 @@
+:root {
+  --small-p-color: #3970c2;
+  --main-h-color: #070e1a;
+  --lil-p-color: #555557;
+  --table-like-p-color: #eaeef2;
+}
+
+@font-face {
+  font-family: "PP Neue Machina Regular";
+  src: url(fonts/PPNeueMachina-InktrapRegular.ttf);
+}
+@font-face {
+  font-family: "PP Neue Machina Bold";
+  src: url(fonts/PPNeueMachina-InktrapBold.ttf);
+}
+@font-face {
+  font-family: "PP Neue Machina Light";
+  src: url(fonts/PPNeueMachina-InktrapLight.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PP Neue Machina Regular";
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background: #0c182b;
+  height: fit-content;
+  overflow-anchor: none;
+}
+
+section {
+  overflow: hidden;
+}
+
+.char {
+  transform: translateY(160px);
+  transition: transform 0.5s;
+  font-family: "PP Neue Machina Bold";
+}
+
+.preloader {
+  background-color: #02060c;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  position: fixed;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.preloader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.load {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes arrows {
+  0%,
+  100% {
+    color: #02060c;
+    transform: translateY(0);
+  }
+  50% {
+    color: #263869;
+    transform: translateY(20px);
+  }
+}
+
+.load span {
+  color: #02060c;
+  --delay: 0s;
+  animation: arrows 1s var(--delay) infinite ease-in;
+}
+
+input[type="button"] {
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.span_grad {
+  font-family: "PP Neue Machina Bold";
+  background: linear-gradient(94.99deg, #37a3f6 19.91%, #4756df 101.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
