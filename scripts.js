@@ -48,7 +48,7 @@ gsap.to(".char", {
 
 // penis function (???)
 const lenis = new Lenis({
-  duration: 0.7,
+  duration: 1,
   easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
   direction: "vertical",
   gestureDirection: "vertical",
