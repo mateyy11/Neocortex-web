@@ -285,14 +285,13 @@ h2 {
   font-size: 16px;
   line-height: 171%;
   color: var(--lil-p-color);
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 .little_p {
-  font-size: 14px;
   line-height: 171%;
   color: var(--lil-p-color);
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 .lil_p_add {
