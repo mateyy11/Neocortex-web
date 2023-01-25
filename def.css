@@ -1,7 +1,7 @@
 :root {
   --small-p-color: #4588ed;
   --main-h-color: #070e1a;
-  --lil-p-color: #555557;
+  --lil-p-color: #727286;
   --table-like-p-color: #eaeef2;
 }
 
@@ -43,7 +43,7 @@ section {
 
 .char {
   transform: translateY(160px);
-  transition: transform 0.5s;
+  transition: all 0.5s;
   font-family: "PP Neue Machina Bold";
 }
 
