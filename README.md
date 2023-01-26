@@ -8,7 +8,7 @@ I've used Lenis, GSAP and text-split for various text animations that can be fou
 
 ## To do:
 
-- Files cleanup
+- Files cleanup, merge js
 - Idk lmao
 
 ## Updates

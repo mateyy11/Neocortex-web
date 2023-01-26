@@ -64,6 +64,7 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
+// navbar scroll animation
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
