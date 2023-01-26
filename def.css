@@ -1,7 +1,7 @@
 :root {
   --small-p-color: #4588ed;
   --main-h-color: #070e1a;
-  --lil-p-color: #727286;
+  --lil-p-color: #53575c;
   --table-like-p-color: #eaeef2;
 }
 
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  background: #0c182b;
+  background: #080f1b;
   height: fit-content;
   overflow-anchor: none;
 }
@@ -48,7 +48,7 @@ section {
 }
 
 .preloader {
-  background-color: #02060c;
+  background-color: #070c16;
   width: 100%;
   height: 100vh;
   z-index: 9999;
@@ -71,7 +71,7 @@ section {
 @keyframes arrows {
   0%,
   100% {
-    color: #02060c;
+    color: #070c16;
     transform: translateY(0);
   }
   50% {
@@ -92,7 +92,7 @@ input[type="button"] {
 
 .span_grad {
   font-family: "PP Neue Machina Bold";
-  background: linear-gradient(94.99deg, #37a3f6 19.91%, #4756df 101.27%);
+  background: linear-gradient(94.99deg, #2673ad 19.91%, #612feb 101.27%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
