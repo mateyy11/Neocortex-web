@@ -336,7 +336,7 @@ h2 {
   content: "";
   height: 100%;
   position: absolute;
-  width: 40%;
+  width: 18%;
   z-index: 2;
   left: 0;
   top: 0;
@@ -347,7 +347,7 @@ h2 {
   content: "";
   height: 100%;
   position: absolute;
-  width: 40%;
+  width: 18%;
   z-index: 2;
   right: 0;
   top: 0;
@@ -368,7 +368,7 @@ h2 {
 .rectangle {
   background: transparent;
   border: 1px var(--main-h-color) solid;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.06); */
   border-radius: 4px;
   max-height: 10em;
   max-width: 10em;
