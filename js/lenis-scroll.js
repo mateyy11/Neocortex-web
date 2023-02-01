@@ -1,6 +1,6 @@
 const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+  duration: 0.5,
+  easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // penis function (???)
   direction: "vertical",
   gestureDirection: "vertical",
   smooth: true,
