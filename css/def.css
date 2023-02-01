@@ -7,15 +7,15 @@
 
 @font-face {
   font-family: "PP Neue Machina Regular";
-  src: url(fonts/PPNeueMachina-InktrapRegular.ttf);
+  src: url(../components/fonts/PPNeueMachina-InktrapRegular.ttf);
 }
 @font-face {
   font-family: "PP Neue Machina Bold";
-  src: url(fonts/PPNeueMachina-InktrapBold.ttf);
+  src: url(../components/fonts/PPNeueMachina-InktrapBold.ttf);
 }
 @font-face {
   font-family: "PP Neue Machina Light";
-  src: url(fonts/PPNeueMachina-InktrapLight.ttf);
+  src: url(../components/fonts/PPNeueMachina-InktrapLight.ttf);
 }
 
 html {

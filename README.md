@@ -8,7 +8,7 @@ I've used Lenis, GSAP and text-split for various text animations that can be fou
 
 ## To do:
 
-- Files cleanup, merge js
+- A lot
 - Idk lmao
 
 ## Updates
@@ -16,5 +16,5 @@ I've used Lenis, GSAP and text-split for various text animations that can be fou
 The site is deffinitely not done yet. There's a lot of work to do.
 LAST UPDATE:
 
-- Major size updates
-- Navbar animation on scroll
+- Partial file cleanup
+- Bug fixes
