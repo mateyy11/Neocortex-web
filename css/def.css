@@ -41,6 +41,19 @@ section {
   overflow: hidden;
 }
 
+.anime_scroll {
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 900ms;
+}
+.anime {
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 900ms;
+}
+
 .char {
   transform: translateY(160px);
   transition: all 0.5s;
