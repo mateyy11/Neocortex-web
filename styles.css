@@ -15,7 +15,7 @@
 }
 
 .navbar-show {
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .burger {
@@ -191,7 +191,7 @@ h1 {
 }
 
 .btn_hero_ow {
-  text-shadow: 2px 2px 10px rgb(40, 44, 54);
+  /* text-shadow: 2px 2px 10px rgb(40, 44, 54); */
   font-family: "PP Neue Machina Bold";
   color: white;
   width: 172px;
