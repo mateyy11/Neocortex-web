@@ -570,7 +570,7 @@ h4 {
 .section_img_short {
   height: 55em;
   width: 100%;
-  background: url(images/Rectangle\ 11.png);
+  background: url(../components/images/Rectangle\ 11.png);
   background-size: contain;
   background-size: 100% 52em;
   padding-bottom: 400px;
