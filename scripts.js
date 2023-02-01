@@ -78,3 +78,5 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+//im lazy asf
