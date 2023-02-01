@@ -11,11 +11,11 @@
 
 .navbar-hidden {
   transform: translateY(-70px);
-  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar-show {
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .burger {
@@ -614,14 +614,14 @@ h6 {
 
 .table_like {
   display: inline-block;
-  width: 537px;
+  width: 708px;
   height: fit-content;
   margin-top: 40px;
 }
 
 .table_like_P1 {
-  font-size: 20px;
-  line-height: 171%;
+  font-size: 18px;
+  line-height: 150%;
   color: var(--table-like-p-color);
 }
 
