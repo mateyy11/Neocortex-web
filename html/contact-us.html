@@ -255,21 +255,5 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
-    <script>
-      // navbar scroll animation
-      let prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        let navbar = document.getElementsByClassName("navbar")[0];
-        if (prevScrollpos > currentScrollPos) {
-          navbar.classList.remove("navbar-hidden");
-          navbar.classList.add("navbar-show");
-        } else {
-          navbar.classList.remove("navbar-show");
-          navbar.classList.add("navbar-hidden");
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
   </body>
 </html>

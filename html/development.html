@@ -65,7 +65,78 @@
     </section>
 
     <main>
-      <div class="white_long_4"></div>
+      <div class="white_long_4">
+        <div class="dev_cont">
+          <h1 class="anime_scroll">Development</h1>
+          <h2 class="anime_scroll">
+            <span class="span_grad">"How we do it"</span>
+          </h2>
+          <p class="dev_p anime_scroll">
+            With a team of experienced developers and a focus on delivering
+            innovative solutions, we are equipped to handle projects of any size
+            and complexity.
+          </p>
+        </div>
+        <div class="spacer"></div>
+        <div class="dev_txt_cont">
+          <div class="anime_scroll">
+            <h2 class=""><span class="span_grad">Technologies</span> used</h2>
+            <p class="just_p">
+              Neocortex uses advanced tech to provide web dev, data analytics,
+              and cyber security solutions tailored to clients' needs. Our
+              developers are proficient in Ruby, Python, and SQL and use
+              frameworks like Ruby on Rails, AngularJS, and Vue.js. We also use
+              data visualization, machine learning, and security testing tools
+              like OWASP, Python Security, and SELinux for high-quality, secure
+              solutions.
+            </p>
+            <div class="line"></div>
+          </div>
+          <div style="width: 100%; height: 124px"></div>
+          <div class="anime_scroll">
+            <h2 class=""><span class="span_grad">Dev</span> process</h2>
+            <p class="just_p">
+              Our development process at Neocortex starts with understanding
+              client needs, followed by planning and design, building and
+              testing, and deployment with maintenance. We prioritize open
+              communication and quality in every step to ensure successful
+              delivery on time and within budget.
+            </p>
+            <div class="line"></div>
+          </div>
+          <div style="width: 100%; height: 124px"></div>
+          <div class="anime_scroll">
+            <h2 class="">
+              <span class="span_grad">Partnerships</span> & Integrations
+            </h2>
+            <p class="just_p">
+              Neocortex is proud to partner with leading technology providers to
+              offer comprehensive solutions to our clients. Our partnerships
+              allow us to integrate our web development, data analytics, and
+              cybersecurity services with the best tools and technologies on the
+              market. This results in seamless and effective workflows for our
+              clients and a competitive edge in the industry.
+            </p>
+            <div class="line"></div>
+          </div>
+          <div style="width: 100%; height: 124px"></div>
+          <div class="anime_scroll">
+            <h2 class="">
+              <span class="span_grad">Team</span>
+            </h2>
+            <p class="just_p">
+              At Neocortex, we have a talented and diverse team of developers
+              with expertise in web development, data analytics, and
+              cybersecurity. Our team consists of individuals with a passion for
+              technology and a commitment to delivering exceptional results.
+              With a focus on continuous learning and professional development,
+              our team stays at the forefront of the latest advancements in the
+              industry.
+            </p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <section>
@@ -147,21 +218,5 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
-    <script>
-      // navbar scroll animation
-      let prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        let navbar = document.getElementsByClassName("navbar")[0];
-        if (prevScrollpos > currentScrollPos) {
-          navbar.classList.remove("navbar-hidden");
-          navbar.classList.add("navbar-show");
-        } else {
-          navbar.classList.remove("navbar-show");
-          navbar.classList.add("navbar-hidden");
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
   </body>
 </html>
