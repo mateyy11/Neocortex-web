@@ -8,13 +8,14 @@ I've used Lenis, GSAP and text-split for various text animations that can be fou
 
 ## To do:
 
-- A lot
-- Idk lmao
+- Responsivity
+- Design fixes
 
 ## Updates
 
 The site is deffinitely not done yet. There's a lot of work to do.
 LAST UPDATE:
 
-- Partial file cleanup
+- Removed some animations (ass optimalisation)
+- Web is almost done, it's just alpha test
 - Bug fixes
