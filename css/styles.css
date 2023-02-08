@@ -121,7 +121,7 @@
 .burger_rec {
   width: 46px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: var(--main-h-color);
   border-radius: 10px;
 }
 .burger_rec:not(:last-of-type) {
@@ -276,7 +276,8 @@ h1 {
   cursor: pointer;
   font-size: 16px;
   background: linear-gradient(94.99deg, #37a3f6 0, #582bd9 100%);
-  -webkit-text-fill-color: transparent;
+  color: var(--small-p-color);
+  background: transparent;
 }
 
 .btn_hero_ow:hover,
