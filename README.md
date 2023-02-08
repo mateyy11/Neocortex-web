@@ -20,5 +20,5 @@ This site is still a work in progress. But don't worry, I've got this!
 ## LATEST UPDATE:
 
 - Streamlined the animations for a smoother experience
-  -It's getting closer to being finished! Just a few more things to go
-  -Bug? What bug? I squashed a few.
+  - It's getting closer to being finished! Just a few more things to go
+  - Bug? What bug? I squashed a few.
