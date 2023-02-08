@@ -108,5 +108,8 @@ input[type="button"] {
   background: linear-gradient(94.99deg, #0091ff 19.91%, #003cff 101.27%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
 }
